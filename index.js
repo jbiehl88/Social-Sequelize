@@ -12,7 +12,7 @@ Post.hasMany(Comment)
 Comment.belongsTo(Post)
 
 User.belongsToMany(Like, { through: "UserLikes" })
-Like.belongsToMany(User, { through: "CardLikes" })
+Like.belongsToMany(User, { through: "UserLikes" })
 
 module.exports = {
 	Comment,
